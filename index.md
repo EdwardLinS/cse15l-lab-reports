@@ -1,6 +1,6 @@
 Hello, World!
 
-[Another](another.md)
+[Another page](another.md)
 
 *Italics* **Bold** ***Italics AND Bold***
 
