@@ -1,14 +1,13 @@
-Tutorial on how to log into course-specific account on ieng6
-
-* Install VSCode
-* Remotely Connection
-* Trying Some Commands
-
 # **Logging Onto Course-Specific Account on ieng6**
+
+**Table of Contents**
+**1. [Install VSCode](install)
+**2. [Remotely Connection](remote)
+**3. [Trying Some Commands](commands)
 
 ---
 
-## 1. Install Visual Studio Code (VSCode)
+## 1. [Install Visual Studio Code (VSCode)](#install)
 
   * **Go to the [Visual Studio Code](https://code.visualstudio.com) website** 
   * **Download** the version of Visual Studio Code that matches your operating system *(eg. macOS for Mac, Windows for PCs)*
@@ -17,7 +16,7 @@ Tutorial on how to log into course-specific account on ieng6
 
 *(**Tip**: If the colors or other icons don't look exactly like this, don't worry! Those are just a difference in settings and operating systems)*
 
-## 2. Remotely Connecting
+## 2. [Remotely Connecting](#remote)
 
 * *Install Git and Setting Up Git Bash (Only For Windows Users)*
   * **Go to the [Git for Windows](https://gitforwindows.org) website and click download**
@@ -43,7 +42,7 @@ Tutorial on how to log into course-specific account on ieng6
   * After the terminal shows something similar to the image below, you are done!
   <img width="412" alt="image" src="https://user-images.githubusercontent.com/63514282/212255974-46162b0f-7439-49a1-9f94-75eb88c30af3.png">
   
-## 3. Try Out Some Commands
+## 3. [Try Out Some Commands](#remote)
  * Here are some commands to use to explore the new remote server's directories
   * *pwd*: Prints the current working directory
   * *cd*: Changes directory to whatever is specified after
