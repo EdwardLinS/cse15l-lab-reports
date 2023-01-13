@@ -39,7 +39,7 @@ Tutorial on how to log into course-specific account on ieng6
   * It should then prompt for password, where you will type your account password *(Tip: It will not show anything when you type your password. This is normal. If you type your password incorrectly, it will prompt again after.)*
   ![image](https://user-images.githubusercontent.com/63514282/212255673-1dc38c3c-6b83-4241-81c3-388704c8272b.png)
   
-  * If it asks *Are you sure you want to continue connecting*, type yes.
+  * If it asks *Are you sure you want to continue connecting*, type `yes`.
   * After the terminal shows something similar to the image below, you are done!
   <img width="412" alt="image" src="https://user-images.githubusercontent.com/63514282/212255974-46162b0f-7439-49a1-9f94-75eb88c30af3.png">
   
