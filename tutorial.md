@@ -33,7 +33,7 @@ Tutorial on how to log into course-specific account on ieng6
   * Click the `+` icon on the right side of the terminal window
   <img width="333" alt="image" src="https://user-images.githubusercontent.com/63514282/212165734-5186bc2f-2457-4c53-8bf3-8847abea1eba.png">
 
- * *Connecting to the Remote Server*
+* *Connecting to the Remote Server*
   * Go [here](https://sdacs.ucsd.edu/~icc/index.php) to locate your 15L username, which is highlighted in gray under Additional Accounts *(Tip: It starts with cs15lwi23)* 
   * In the git bash terminal, type `ssh <your 15L username>@ieng6.ucsd.edu` and enter
   * It should then prompt for password, where you will type your account password *(Tip: It will not show anything when you type your password. This is normal. If you type your password incorrectly, it will prompt again so don't worry.)*
