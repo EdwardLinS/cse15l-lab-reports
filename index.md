@@ -24,11 +24,9 @@
   * Open Visual Studio Code 
   * Press and hold `Ctrl` + `` ` `` to open up the terminal
   <img width="1869" alt="image" src="https://user-images.githubusercontent.com/63514282/212164612-267ce18b-1c05-4e57-a0f0-f87de9dd4ffb.png">
-  
   * Press and hold `Ctrl` + `Shift` + `P` to open up the command palette
   * Type and enter: `Select Default Profile` 
 <img width="837" alt="image" src="https://user-images.githubusercontent.com/63514282/212164960-6a5c416c-1ec3-4b30-87da-9d609168689c.png">
-
   * Select Git Bash from the drop down 
   * Click the `+` icon on the right side of the terminal window
   <img width="333" alt="image" src="https://user-images.githubusercontent.com/63514282/212165734-5186bc2f-2457-4c53-8bf3-8847abea1eba.png">
@@ -45,12 +43,12 @@
   
 ## 3. Try Out Some Commands
  * Here are some commands to use to explore the new remote server's directories
-  * *pwd*: Prints the current working directory
-  * *cd*: Changes directory to whatever is specified after
-   * *cd ~*: Changes directory to the home directory
-  * *ls -a*: lists all files in current working directory
-  * *cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/*: copies hello.text to home directory
-  * *cat /home/linux/ieng6/cs15lwi23/public/hello.txt*: prints the content of hello.text 
+  * `pwd`: Prints the current working directory
+  * `cd`: Changes directory to whatever is specified after
+   * `cd ~`: Changes directory to the home directory
+  * `ls -a`: lists all files in current working directory
+  * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`: copies hello.text to home directory
+  * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`: prints the content of hello.text 
 ![image](https://user-images.githubusercontent.com/63514282/212258834-27f0cfac-15b4-4d64-858e-d49714ab123d.png)
 *An example of using these commands together*
 
