@@ -5,7 +5,7 @@
 ## 1. Install Visual Studio Code (VSCode)
 
   * **Go to the [Visual Studio Code](https://code.visualstudio.com) website** 
-  * **Download** the version of Visual Studio Code that matches your operating system *(eg. macOS for Mac, Windows for PCs)*
+  * **Download** the version of Visual Studio Code that matches your operating system
   * After installing, **click on the Visual Studio Code icon** to open a window that should look like this: 
 <img width="1920" alt="vscode-starting-screen" src="https://user-images.githubusercontent.com/63514282/212158296-f69a178e-cdcb-49ed-9b53-c601281b6f7b.png">
 
@@ -23,9 +23,10 @@
   * Type and enter: `Select Default Profile` 
 <img width="837" alt="image" src="https://user-images.githubusercontent.com/63514282/212164960-6a5c416c-1ec3-4b30-87da-9d609168689c.png">
   
-  * Select Git Bash from the drop down 
+  * Select *Git Bash* from the drop down 
   * Click the `+` icon on the right side of the terminal window
-  <img width="333" alt="image" src="https://user-images.githubusercontent.com/63514282/212165734-5186bc2f-2457-4c53-8bf3-8847abea1eba.png">
+  ![image](https://user-images.githubusercontent.com/63514282/212565717-eda707e5-9d56-433f-bf7d-0231e1850c25.png)
+  *The right side of the terminal should show something like this.*
 
 * *Connecting to the Remote Server*
   * Go [here](https://sdacs.ucsd.edu/~icc/index.php) to locate your 15L username, which is highlighted in gray under Additional Accounts *(Tip: It starts with cs15lwi23)* 
