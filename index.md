@@ -1,11 +1,5 @@
 # **Logging Onto Course-Specific Account on ieng6**
 
-
-**Table of Contents**
-1. [Install Visual Studio Code](#1-install-visual-studio-code-vscode)
-2. [Remotely Connecting](#2-remotely-connecting)
-3. [Try Out Some Commands](#3-try-out-some-commands)
-
 ---
 
 ## 1. Install Visual Studio Code (VSCode)
