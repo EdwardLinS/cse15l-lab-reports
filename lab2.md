@@ -121,3 +121,7 @@ class StringServer {
  
  _Explaination:_
 Before, the code wasn't storing the elements of the array before the changes so a lot of elements were replaced incorectly. For example, `[1, 2]` would become `[2, 2]` since the 1 was never stored and was replaced by 2. Thus, a solution would be to create a clone of the list that contains the original elements then replace `arr` elements with elements from the clone. 
+
+# Part 3
+
+I learned how to create a web server that used the url to receive inputs. From these inputs, I could use conditionals to check for certain things in the path and query. Then, I would be able to display certain things based on what the conditionals got.
