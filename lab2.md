@@ -41,7 +41,7 @@ class StringServer {
 - **Methods:** handleRequest and main
 - **Arguments/Values:** 
   - args = `[4000]`
-  -  url = `"http://localhost:4000"` 
+  -  url = `"http://localhost:4000/add-message?s=Hello"` 
 - **Fields:** 
   - port = `4000`
   - message = `"Hello"`
@@ -53,9 +53,13 @@ class StringServer {
 - **Methods:** handleRequest and main
 - **Arguments/Values:** 
   - args = `[4000]`
-  -  url = `"http://localhost:4000"` 
+  -  url = `"http://localhost:4000/add-message?s=How are you"`
 - **Fields:** 
   - port = `4000`
   - message = `"How are you"`
   - output = `"Hello\nHow are you\n"`
 
+- **Changes**
+    - _url_ changes to whatever the user types 
+    - _Message_ changes to match String in query
+    - _Output_ changes to add message and a new line 
