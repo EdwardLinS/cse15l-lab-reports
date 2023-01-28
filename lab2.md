@@ -61,5 +61,5 @@ class StringServer {
 
 - **Changes**
     - _url_ changes to whatever the user types 
-    - _Message_ changes to match String in query
-    - _Output_ changes to add message and a new line 
+    - _message_ changes to match String in query
+    - _output_ changes to add message and a new line 
