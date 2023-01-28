@@ -94,4 +94,30 @@ class StringServer {
 	}
 ```
  
+ **Symptoms**
  
+<img width="2620" alt="image" src="https://user-images.githubusercontent.com/63514282/215261504-c0e2819c-ccfa-4ac5-8605-439804b334d5.png">
+
+ **Before / After**
+ 
+ _Before:_
+ ```java
+ static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+ ```
+ 
+ _After:_
+ ```java
+ static void reverseInPlace(int[] arr) {
+    int[] arrClone = arr.clone();
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arrClone[arr.length - i - 1];
+    }
+  }
+ ```
+ 
+ _Explaination:_
+Before, the code wasn't storing the elements of the array before the changes so a lot of elements were replaced incorectly. For example, `[1, 2]` would become `[2, 2]` since the 1 was never stored and was replaced by 2. Thus, a solution would be to create a clone of the list that contains the original elements then replace `arr` elements with elements from the clone. 
