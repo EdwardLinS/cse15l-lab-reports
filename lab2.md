@@ -1,3 +1,4 @@
+# Part 1
 Code
 
 ```java
@@ -63,3 +64,34 @@ class StringServer {
     - _url_ changes to whatever the user types 
     - _message_ changes to match String in query
     - _output_ changes to add message and a new line 
+
+# Part 2
+
+**Failure Inducing Test**
+```java
+@Test
+  public void testReverseInPlace2() {
+    int[] input1 = {1,2};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{2,1}, input1);
+  }
+ ```
+ 
+**Non-Failure Inducing Tests**
+```java
+ @Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+
+  @Test
+  public void testReverseInPlace1() {
+    int[] input1 = { };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ }, input1);
+	}
+```
+ 
+ 
