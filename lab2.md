@@ -50,5 +50,12 @@ class StringServer {
 
 
 ![image](https://user-images.githubusercontent.com/63514282/214728423-a1f2d657-cd13-4a9d-84d9-33931dbeabf6.png)
-- handleRequest and main
+- **Methods:** handleRequest and main
+- **Arguments/Values:** 
+  - args = `[4000]`
+  -  url = `"http://localhost:4000"` 
+- **Fields:** 
+  - port = `4000`
+  - message = `"How are you"`
+  - output = `"Hello\nHow are you\n"`
 
