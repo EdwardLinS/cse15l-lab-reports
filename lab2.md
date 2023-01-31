@@ -63,12 +63,8 @@ class StringServer {
   - message = `"How are you"`
   - output = `"Hello\nHow are you\n"`
 
-- **Changes**
-    - _url_ changes to whatever the user types 
-    - _message_ changes to match String in query
-    - _output_ changes to add message and a new line 
-
-- _url_ changes from `"https://localhost:4000/add-messages?s=Hello"` to `"https://localhost:4000/add-messages?s=How are you"` 
+- **Changes** 
+    - _url_ changes from `"https://localhost:4000/add-messages?s=Hello"` to `"https://localhost:4000/add-messages?s=How are you"` 
     - _message_ changes `"Hello"` to `"How are you"`
     - _output_ changes from `"Hello\n"` to `"Hello\nHow are you\n"`
 
