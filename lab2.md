@@ -48,7 +48,10 @@ class StringServer {
   - message = `"Hello"`
   - output = `"Hello\n"`
   
-
+- **Changes**
+    - _url_ changes from `"https://localhost:4000"` to `"https://localhost:4000/add-messages?s=Hello"` 
+    - _message_ changes from an empty String to `"Hello"`
+    - _output_ changes from an empty String to `"Hello\n"`
 
 ![image](https://user-images.githubusercontent.com/63514282/214728423-a1f2d657-cd13-4a9d-84d9-33931dbeabf6.png)
 - **Methods:** handleRequest and main
@@ -64,6 +67,10 @@ class StringServer {
     - _url_ changes to whatever the user types 
     - _message_ changes to match String in query
     - _output_ changes to add message and a new line 
+
+- _url_ changes from `"https://localhost:4000/add-messages?s=Hello"` to `"https://localhost:4000/add-messages?s=How are you"` 
+    - _message_ changes `"Hello"` to `"How are you"`
+    - _output_ changes from `"Hello\n"` to `"Hello\nHow are you\n"`
 
 # Part 2
 
