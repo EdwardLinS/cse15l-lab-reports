@@ -25,6 +25,7 @@
 - **What:** This command searched for files with the word `lotus` regardless of case. 
 - **Why:** The command is useful since it found files not only with `lotus` but with `Lotus` as well. 
 
+
 - ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:515$ grep --ignore-case "pride" ./written_2/travel_guides/berlitz1/*.txt
@@ -205,6 +206,7 @@ where pride of place
 ```
 - **What:** This command searched for how many times the word `lotus` appeared in the all the txt files in the directory. 
 - **Why:** The command is useful since it is able to show which files have the word `lotus` and how many times the word appears in the files that do have the word.
+
 
 - ***Example 2***
 ```console
