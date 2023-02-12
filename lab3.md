@@ -12,10 +12,6 @@
   
   
 ## 4 *grep* command options
-- `grep -v` / `grep --invert-match`
-  - **What:** This command option selects non-matching lines
-  - **Why:** This is useful for finding files that don't have the specified pattern
-  - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 - `grep -i` / `grep --ignore-case`
   - **What:** This command option matches without matching case
   - **Why:** This is useful when you are purely looking for the pattern and not caring about specific case of the pattern.
@@ -36,6 +32,8 @@
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        white lotus blossoms. The myth-shrouded lakes are said to be the home
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        settlement beneath the surface. Outside lotus-blossom season, the lakes
 ```
+  - **What:** This command searched for files with the word lotus regardless of case. 
+  - **Why:** The command is useful when the goal is to find files just with the specified word regardless of case. 
 
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:515$ grep --ignore-case "pride" ./written_2/travel_guides/berlitz1/*.txt
