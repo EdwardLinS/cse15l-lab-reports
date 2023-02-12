@@ -25,7 +25,7 @@
   - **What:** This command searched for files with the word `lotus` regardless of case. 
   - **Why:** The command is useful since it found files not only with `lotus` but with `Lotus` as well. 
 
-  - ***Example 2***
+- ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:515$ grep --ignore-case "pride" ./written_2/travel_guides/berlitz1/*.txt
 ./written_2/travel_guides/berlitz1/HistoryEgypt.txt:        national pride by wresting the Suez Canal out of British hands he
@@ -98,7 +98,7 @@ where pride of place
   - **Why:** This is useful when the count of files is necessary and not file path or content.
   - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 
-  - ***Example 1***
+- ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-203]:skill-demo1-data:501$ grep -c "lotus" ./written_2/travel_guides/berlitz1/*.txt     
 ./written_2/travel_guides/berlitz1/HandRHawaii.txt:0
@@ -206,7 +206,7 @@ where pride of place
   - **What:** This command searched for how many times the word `lotus` appeared in the all the txt files in the directory. 
   - **Why:** The command is useful since it is able to show which files have the word `lotus` and how many times the word appears in the files that do have the word.
 
-  - ***Example 2***
+- ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-203]:skill-demo1-data:504$ grep --count "pride" ./written_2/travel_guides/berlitz1/*.txt
 ./written_2/travel_guides/berlitz1/HandRHawaii.txt:0
@@ -320,7 +320,7 @@ where pride of place
   - **Why:** This is useful to grep all the files inside a directory with many different directories inside it, removing the need to go through each directory individually.
   - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 
-  - ***Example 1***
+- ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:518$ grep -r "lotus" ./written_2/travel_guides          
 ./written_2/travel_guides/berlitz1/IntroIndia.txt:        whose navel a lotus grew bearing Brahma whose task it was to create the
@@ -365,7 +365,7 @@ blanket the statue with flowers. Beyond is Shivapuri Watershed and Wildlife Pres
   - **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `lotus`.
   - **Why:** This is useful since it is able to look through all the txt files for `lotus` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
 
-  - ***Example 2***
+- ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:519$ grep --recursive "pride" ./written_2/travel_guides
 ./written_2/travel_guides/berlitz1/HistoryEgypt.txt:        national pride by wresting the Suez Canal out of British hands he
@@ -482,7 +482,7 @@ and pride intact.
   - **Why:** This is useful when only the path or name of the file is needed and it is also easier to read since the text isn't shown.
   - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 
-  - ***Example 1***
+- ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-201]:skill-demo1-data:527$ grep -l "lotus" ./written_2/travel_guides/berlitz1/*.txt     
 ./written_2/travel_guides/berlitz1/IntroIndia.txt
@@ -493,7 +493,7 @@ and pride intact.
   - **What:** This command option printed the name of the files had the word `lotus` in them.
   - **Why:** This is useful since it printed the file names that have `lotus` in them. 
 
-  - ***Example 2***
+- ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-203]:skill-demo1-data:504$ grep --files-with-matches "pride" ./written_2/travel_guides/berlitz1/*.txt
 ./written_2/travel_guides/berlitz1/HistoryEgypt.txt
