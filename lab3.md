@@ -480,7 +480,7 @@ and pride intact.
 
 ----
 
-4. `grep -l` / `grep --files-with-matches` 
+### 4. `grep -l` / `grep --files-with-matches` 
   - **What:** This command option prints the name of the file that has the match
   - **Why:** This is useful when only the path or name of the file is needed and it is also easier to read since the text isn't shown.
   - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
