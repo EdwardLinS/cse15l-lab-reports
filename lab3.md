@@ -22,8 +22,8 @@
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        white lotus blossoms. The myth-shrouded lakes are said to be the home
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        settlement beneath the surface. Outside lotus-blossom season, the lakes
 ```
-- **What:** This command searched for files with the word `lotus` regardless of case. 
-- **Why:** The command is useful since it found files not only with `lotus` but with `Lotus` as well. 
+  - **What:** This command searched for files with the word `lotus` regardless of case. 
+  - **Why:** The command is useful since it found files not only with `lotus` but with `Lotus` as well. 
 
 
 - ***Example 2***
@@ -89,8 +89,8 @@ where pride of place
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        Plant life. The pride of the mountain is its 
 1,500
 ```
-- **What:** This command searched for files with the word `pride` regardless of case. 
-- **Why:** The command is useful since it found files not only with `pride` but with `Pride` as well. 
+  - **What:** This command searched for files with the word `pride` regardless of case. 
+  - **Why:** The command is useful since it found files not only with `pride` but with `Pride` as well. 
 
 ----
 
@@ -204,8 +204,8 @@ where pride of place
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:2
 ./written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
 ```
-- **What:** This command searched for how many times the word `lotus` appeared in the all the txt files in the directory. 
-- **Why:** The command is useful since it is able to show which files have the word `lotus` and how many times the word appears in the files that do have the word.
+  - **What:** This command searched for how many times the word `lotus` appeared in the all the txt files in the directory. 
+  - **Why:** The command is useful since it is able to show which files have the word `lotus` and how many times the word appears in the files that do have the word.
 
 
 - ***Example 2***
@@ -313,8 +313,8 @@ where pride of place
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:1
 ./written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
 ```
-- **What:** This command searched for how many times the word `pride` appeared in the all the txt files in the directory. 
-- **Why:** The command is useful since it is able to show which files have the word `pride` and how many times the word appears in the files that do have the word.
+  - **What:** This command searched for how many times the word `pride` appeared in the all the txt files in the directory. 
+  - **Why:** The command is useful since it is able to show which files have the word `pride` and how many times the word appears in the files that do have the word.
 
 ----
 
@@ -365,8 +365,8 @@ set in a sunken tank of water, the 5-m (16-ft) image dates from the seventh cent
 blanket the statue with flowers. Beyond is Shivapuri Watershed and Wildlife Preserve, good place for a day hike.
 ```
 
-- **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `lotus`.
-- **Why:** This is useful since it is able to look through all the txt files for `lotus` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
+  - **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `lotus`.
+  - **Why:** This is useful since it is able to look through all the txt files for `lotus` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
 
 - ***Example 2***
 ```console
@@ -475,8 +475,8 @@ and pride intact.
 ./written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:San Juan “never closes,” they say, with pride. And they’re absolutely right. Even at sunrise, you’ll see bright-eyed people heading for an early breakfast after spending all night at a discotheque or nightclub that stays open until the last patron departs.
 ```
 
-- **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `pride`.
-- **Why:** This is useful since it is able to look through all the txt files for `pride` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
+  - **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `pride`.
+  - **Why:** This is useful since it is able to look through all the txt files for `pride` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
 
 ----
 
@@ -493,8 +493,8 @@ and pride intact.
 ./written_2/travel_guides/berlitz1/WhereToJapan.txt
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt
 ```
-- **What:** This command option printed the name of the files had the word `lotus` in them.
-- **Why:** This is useful since it printed the file names that have `lotus` in them. 
+  - **What:** This command option printed the name of the files had the word `lotus` in them.
+  - **Why:** This is useful since it printed the file names that have `lotus` in them. 
 
 - ***Example 2***
 ```console
@@ -521,5 +521,5 @@ and pride intact.
 ./written_2/travel_guides/berlitz1/WhereToMalaysia.txt
 ```
 
-- **What:** This command option printed the name of the files had the word `pride` in them.
-- **Why:** This is useful since it printed the file names that have `pride` in them. 
+  - **What:** This command option printed the name of the files had the word `pride` in them.
+  - **Why:** This is useful since it printed the file names that have `pride` in them. 
