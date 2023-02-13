@@ -522,4 +522,4 @@ and pride intact.
 ```
 
 - **What:** This command option printed the name of the files had the word `pride` in them.
-- **Why:** This is useful since it printed the file names that have `lotus` in them. 
+- **Why:** This is useful since it printed the file names that have `pride` in them. 
