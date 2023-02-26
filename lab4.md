@@ -3,15 +3,13 @@
 ## Setup
 
 ### 1. Delete previous lab7 repositories (only if there is any)
-- `cd ~` `<enter>`
-  - navigate to home directory
-  - <img width="454" alt="image" src="https://user-images.githubusercontent.com/63514282/221433065-e1d0cede-3e2c-4ead-89a8-6bfa8ceb6990.png">
-- `rm -rf lab7` `<enter>`
-  - removes directory lab7
-  - <img width="500" alt="image" src="https://user-images.githubusercontent.com/63514282/221433086-06d12ca0-97d3-4ccb-be9c-c3bd379c0b33.png">
-- `ls` `<enter>`
-  - check that lab7 is no longer there
-  - <img width="1244" alt="image" src="https://user-images.githubusercontent.com/63514282/221433135-9eceee4e-266b-4bf5-b31b-4e1c72ea605f.png"> 
+- Go to settings in your old lab7 fork repository
+  - <img width="1835" alt="image" src="https://user-images.githubusercontent.com/63514282/221434590-7834efb5-6fa4-44e6-beda-d8cc479ba4bb.png">
+- Scroll all the way down the page
+  - <img width="1772" alt="image" src="https://user-images.githubusercontent.com/63514282/221434651-497e931c-cc52-4965-a46b-102c4ab5d718.png">
+- Click the `Delete this repository` button 
+  - Type what the instructions say then hit `<enter>` or the button that says `I understand the consequences, please delete this repository` 
+    - <img width="586" alt="image" src="https://user-images.githubusercontent.com/63514282/221434840-d666a342-6c4f-493b-8fb0-007744802150.png">
 
 ### 2. Fork repository
 - Go to this [repository](https://github.com/ucsd-cse15l-w23/lab7) 
