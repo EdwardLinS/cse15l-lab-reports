@@ -1,15 +1,8 @@
-
-# Steps
+# Lab 4 Steps
 
 ## Setup
 
-MAYBE ADD THE DELETE REPO THING HERE
-
-1. Fork this [repository](https://github.com/ucsd-cse15l-w23/lab7) 
-
-## Tasks
-
-### 1. Delete previous lab7 repositories
+### 1. Delete previous lab7 repositories (only if there is any)
 - `cd ~` `<enter>`
   - navigate to home directory
   - <img width="454" alt="image" src="https://user-images.githubusercontent.com/63514282/221433065-e1d0cede-3e2c-4ead-89a8-6bfa8ceb6990.png">
@@ -21,13 +14,19 @@ MAYBE ADD THE DELETE REPO THING HERE
   - <img width="1244" alt="image" src="https://user-images.githubusercontent.com/63514282/221433135-9eceee4e-266b-4bf5-b31b-4e1c72ea605f.png"> 
 
 ### 2. Fork repository
-- <img width="1875" alt="image" src="https://user-images.githubusercontent.com/63514282/221432966-f7a0aca8-241e-47f1-bfa5-ca707aab0a91.png">
+- Go to this [repository](https://github.com/ucsd-cse15l-w23/lab7) 
+- Click the `Fork` button at the top right
+  - <img width="1848" alt="image" src="https://user-images.githubusercontent.com/63514282/221434087-ac29b9b9-71ad-4153-ac54-255f8807b096.png">
+- Click the green `Create fork` button at the bottom
+  - <img width="1843" alt="image" src="https://user-images.githubusercontent.com/63514282/221434171-67288da8-c170-40b4-8a75-4c940056fb8c.png">
+
+## Tasks
 
 ### 3. Log into the ieng6 remote server
   - `ssh cs15lwi23<last three letters of username>@ieng6.ucsd.edu` `<enter>`
   - <img width="635" alt="image" src="https://user-images.githubusercontent.com/63514282/221264856-59af94fb-6513-40c8-a19e-33fa22398495.png">
     
-    - *It may not look exactly like this but as long as it doesn't prompt for the password again, login is successful.*
+    - *It may not look exactly like this but as long as it says successfully logged in it is correct.*
 
 ### 4. Clone your forked repository
   - `git clone <forked repository link>` `<enter>`
