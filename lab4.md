@@ -43,7 +43,21 @@ MAYBE ADD THE DELETE REPO THING HERE
   
 
   - Delete the bug and replace it with the correct variable
-    - `<delete>`
+    - `<delete>` `2`
+    - <img width="881" alt="image" src="https://user-images.githubusercontent.com/63514282/221432010-82012222-63d3-47a9-a3e4-12bf118ab19b.png">
+  - Save file and exit
+    - `ctrl` + `o` 
+      - save file changes 
+    - `<enter>`
+      - confirm file name 
+    - `ctrl` + `x` 
+      - close nano 
+
+<img width="695" alt="image" src="https://user-images.githubusercontent.com/63514282/221431872-8c1a5507-25bd-4822-be94-c3c02915fe3a.png">
+<img width="669" alt="image" src="https://user-images.githubusercontent.com/63514282/221431887-e81ed0ab-3c54-4c1a-ac92-f2a0800348d2.png">
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/63514282/221431904-e88b6ad6-da6c-4d33-b999-8acf98defc19.png">
+<img width="789" alt="image" src="https://user-images.githubusercontent.com/63514282/221432225-e4e8f72b-9ef7-4961-adc5-44e953bd3064.png">
+
 
 
   
