@@ -53,7 +53,7 @@
       - Jumps to bottom of the file
       - <img width="915" alt="image" src="https://user-images.githubusercontent.com/63514282/221384277-9f1aae44-bd67-4f8c-8b4b-c40f4d61bc15.png">
 
-    - `<up> <up> <up> <up> <up> <up> <up> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right>`
+    - `<up><up><up><up><up><up><up><right><right><right><right><right><right><right><right><right><right><right>`
       - <img width="885" alt="image" src="https://user-images.githubusercontent.com/63514282/221384350-415fe637-0820-4e81-af21-3f2071b67a94.png">
   
   - Delete the bug and replace it with the correct variable
