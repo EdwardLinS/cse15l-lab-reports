@@ -64,15 +64,16 @@
       - save file changes 
     - `<enter>`
       - confirm file name 
+    - <img width="904" alt="image" src="https://user-images.githubusercontent.com/63514282/221432551-5eeb5ac6-eab6-45ba-9f64-007eb1114977.png"> 
     - `ctrl` + `x` 
       - close nano 
-    - <img width="904" alt="image" src="https://user-images.githubusercontent.com/63514282/221432551-5eeb5ac6-eab6-45ba-9f64-007eb1114977.png"> 
+    
 
 ### 8. Run Tests Again
 - `ctrl` + `r` `javac` `<enter>`
   - brings up past compile call
   - <img width="1071" alt="image" src="https://user-images.githubusercontent.com/63514282/221433448-40bde553-9c08-4e41-95fa-6cfab09c7800.png">
-- `ctrl` + `r` `java ` `<enter>`
+- `ctrl` + `r` `java<space>` `<enter>`
   - brings up past java run call 
   - <img width="1497" alt="image" src="https://user-images.githubusercontent.com/63514282/221433618-07e29644-342c-404c-95f4-f25b1b3b22cc.png">
 - <img width="1583" alt="image" src="https://user-images.githubusercontent.com/63514282/221433628-2213cba2-9779-4369-b109-c7a301e13c55.png">
@@ -80,9 +81,9 @@
 ### 9. Add, Commit, Push Changes
 - `git add ListExamples.java` `<enter>`
   - <img width="695" alt="image" src="https://user-images.githubusercontent.com/63514282/221431872-8c1a5507-25bd-4822-be94-c3c02915fe3a.png"> 
-- `git commit -b "Fix bug"` `<enter>`
+- `git commit -m "Fix bug"` `<enter>`
   - <img width="810" alt="image" src="https://user-images.githubusercontent.com/63514282/221431904-e88b6ad6-da6c-4d33-b999-8acf98defc19.png">
-- `git push`
+- `git push` `<enter>`
   - <img width="789" alt="image" src="https://user-images.githubusercontent.com/63514282/221432225-e4e8f72b-9ef7-4961-adc5-44e953bd3064.png"> 
 
 
