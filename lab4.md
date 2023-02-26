@@ -40,11 +40,14 @@
 
 ### 6. Run the tests
   - `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` `<enter>`
+    - Compile all java files in the directory
   - `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>`
+    - Runs the tester file 
     - <img width="1590" alt="image" src="https://user-images.githubusercontent.com/63514282/221384047-bcc19db5-0652-4419-9c66-9cf6800eafaa.png">
     
 ### 7. Fix bug in ListExamples file
   - `nano ListExamples.java` `<enter>`
+    - Opens editor on ListExamples.java 
     - <img width="671" alt="image" src="https://user-images.githubusercontent.com/63514282/221384233-c485a768-4308-46d8-9352-22f53fdeb2c3.png">
     - <img width="1585" alt="image" src="https://user-images.githubusercontent.com/63514282/221384244-a40b0304-0c27-4555-8edb-9f1719d6ddee.png">
 
@@ -54,6 +57,7 @@
       - <img width="915" alt="image" src="https://user-images.githubusercontent.com/63514282/221384277-9f1aae44-bd67-4f8c-8b4b-c40f4d61bc15.png">
 
     - `<up><up><up><up><up><up><up><right><right><right><right><right><right><right><right><right><right><right>`
+      - Error is 7 up from the bottom and 11 to the right
       - <img width="885" alt="image" src="https://user-images.githubusercontent.com/63514282/221384350-415fe637-0820-4e81-af21-3f2071b67a94.png">
   
   - Delete the bug and replace it with the correct variable
@@ -80,10 +84,13 @@
 
 ### 9. Add, Commit, Push Changes
 - `git add ListExamples.java` `<enter>`
+  - Adds the changed file to staging area 
   - <img width="695" alt="image" src="https://user-images.githubusercontent.com/63514282/221431872-8c1a5507-25bd-4822-be94-c3c02915fe3a.png"> 
 - `git commit -m "Fix bug"` `<enter>`
+  - Commits changes with a message of what changed
   - <img width="810" alt="image" src="https://user-images.githubusercontent.com/63514282/221431904-e88b6ad6-da6c-4d33-b999-8acf98defc19.png">
 - `git push` `<enter>`
+  - Push new changes made on local to repository
   - <img width="789" alt="image" src="https://user-images.githubusercontent.com/63514282/221432225-e4e8f72b-9ef7-4961-adc5-44e953bd3064.png"> 
 
 
