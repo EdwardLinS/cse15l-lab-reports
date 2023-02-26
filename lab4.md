@@ -40,7 +40,7 @@
 
 ### 6. Run the tests
   - `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` `<enter>`
-  - `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>
+  - `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>`
     - <img width="1590" alt="image" src="https://user-images.githubusercontent.com/63514282/221384047-bcc19db5-0652-4419-9c66-9cf6800eafaa.png">
     
 ### 7. Fix bug in ListExamples file
