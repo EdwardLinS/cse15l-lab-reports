@@ -9,26 +9,44 @@ MAYBE ADD THE DELETE REPO THING HERE
 
 ## Tasks
 
-### 1. Log into the ieng6 remote server
+### 1. Delete previous lab7 repositories
+- `cd ~` `<enter>`
+  - navigate to home directory
+  - <img width="454" alt="image" src="https://user-images.githubusercontent.com/63514282/221433065-e1d0cede-3e2c-4ead-89a8-6bfa8ceb6990.png">
+- `rm -rf lab7` `<enter>`
+  - removes directory lab7
+  - <img width="500" alt="image" src="https://user-images.githubusercontent.com/63514282/221433086-06d12ca0-97d3-4ccb-be9c-c3bd379c0b33.png">
+- `ls` `<enter>`
+  - check that lab7 is no longer there
+  - <img width="1244" alt="image" src="https://user-images.githubusercontent.com/63514282/221433135-9eceee4e-266b-4bf5-b31b-4e1c72ea605f.png"> 
+
+### 2. Fork repository
+- <img width="1875" alt="image" src="https://user-images.githubusercontent.com/63514282/221432966-f7a0aca8-241e-47f1-bfa5-ca707aab0a91.png">
+
+### 3. Log into the ieng6 remote server
   - `ssh cs15lwi23<last three letters of username>@ieng6.ucsd.edu` `<enter>`
   - <img width="635" alt="image" src="https://user-images.githubusercontent.com/63514282/221264856-59af94fb-6513-40c8-a19e-33fa22398495.png">
     
     - *It may not look exactly like this but as long as it doesn't prompt for the password again, login is successful.*
-### 2. Clone your forked repository
+
+### 4. Clone your forked repository
   - `git clone <forked repository link>` `<enter>`
     - The forked repository link can be found by clicking the green `<> Code` button and copying the https link or ssh link if you have set up ssh
   - git clone with https
     - <img width="930" alt="image" src="https://user-images.githubusercontent.com/63514282/221383951-a608a4b8-c701-4893-a145-53a2ff02efd6.png">
   - git clone with ssh 
     - <img width="884" alt="image" src="https://user-images.githubusercontent.com/63514282/221383927-a5eaf476-a163-4435-bdc1-9b39ab4f15e8.png">
-### 3. Change directories into lab7
+
+### 5. Change directories into lab7
   - `cd lab7` `<enter>`
     - <img width="466" alt="image" src="https://user-images.githubusercontent.com/63514282/221383965-523d7c86-82e3-4163-a1dd-9fa80c78e135.png">
-### 4. Run the tests
+
+### 6. Run the tests
   - `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` `<enter>`
   - `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` `<enter>
     - <img width="1590" alt="image" src="https://user-images.githubusercontent.com/63514282/221384047-bcc19db5-0652-4419-9c66-9cf6800eafaa.png">
-### 5. Fix bug in ListExamples file
+    
+### 7. Fix bug in ListExamples file
   - `nano ListExamples.java` `<enter>`
     - <img width="671" alt="image" src="https://user-images.githubusercontent.com/63514282/221384233-c485a768-4308-46d8-9352-22f53fdeb2c3.png">
     - <img width="1585" alt="image" src="https://user-images.githubusercontent.com/63514282/221384244-a40b0304-0c27-4555-8edb-9f1719d6ddee.png">
@@ -41,7 +59,6 @@ MAYBE ADD THE DELETE REPO THING HERE
     - `<up> <up> <up> <up> <up> <up> <up> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right> <right>`
       - <img width="885" alt="image" src="https://user-images.githubusercontent.com/63514282/221384350-415fe637-0820-4e81-af21-3f2071b67a94.png">
   
-
   - Delete the bug and replace it with the correct variable
     - `<delete>` `2`
     - <img width="881" alt="image" src="https://user-images.githubusercontent.com/63514282/221432010-82012222-63d3-47a9-a3e4-12bf118ab19b.png">
@@ -52,11 +69,27 @@ MAYBE ADD THE DELETE REPO THING HERE
       - confirm file name 
     - `ctrl` + `x` 
       - close nano 
+    - <img width="904" alt="image" src="https://user-images.githubusercontent.com/63514282/221432551-5eeb5ac6-eab6-45ba-9f64-007eb1114977.png"> 
 
-<img width="695" alt="image" src="https://user-images.githubusercontent.com/63514282/221431872-8c1a5507-25bd-4822-be94-c3c02915fe3a.png">
-<img width="669" alt="image" src="https://user-images.githubusercontent.com/63514282/221431887-e81ed0ab-3c54-4c1a-ac92-f2a0800348d2.png">
-<img width="810" alt="image" src="https://user-images.githubusercontent.com/63514282/221431904-e88b6ad6-da6c-4d33-b999-8acf98defc19.png">
-<img width="789" alt="image" src="https://user-images.githubusercontent.com/63514282/221432225-e4e8f72b-9ef7-4961-adc5-44e953bd3064.png">
+### 8. Run Tests Again
+- `ctrl` + `r` `javac` `<enter>`
+  - brings up past compile call
+  - <img width="1071" alt="image" src="https://user-images.githubusercontent.com/63514282/221433448-40bde553-9c08-4e41-95fa-6cfab09c7800.png">
+- `ctrl` + `r` `java ` `<enter>`
+  - brings up past java run call 
+  - <img width="1497" alt="image" src="https://user-images.githubusercontent.com/63514282/221433618-07e29644-342c-404c-95f4-f25b1b3b22cc.png">
+- <img width="1583" alt="image" src="https://user-images.githubusercontent.com/63514282/221433628-2213cba2-9779-4369-b109-c7a301e13c55.png">
+
+### 9. Add, Commit, Push Changes
+- `git add ListExamples.java` `<enter>`
+  - <img width="695" alt="image" src="https://user-images.githubusercontent.com/63514282/221431872-8c1a5507-25bd-4822-be94-c3c02915fe3a.png"> 
+- `git commit -b "Fix bug"` `<enter>`
+  - <img width="810" alt="image" src="https://user-images.githubusercontent.com/63514282/221431904-e88b6ad6-da6c-4d33-b999-8acf98defc19.png">
+- `git push`
+  - <img width="789" alt="image" src="https://user-images.githubusercontent.com/63514282/221432225-e4e8f72b-9ef7-4961-adc5-44e953bd3064.png"> 
+
+
+
 
 
 
