@@ -1,6 +1,6 @@
 # Command: `find`
 ## 4 *find* command options
-### 1. `find <file-path> -name <text>`
+### 1. `find <file-path> -name <file-name>`
   - **What:** This command option finds the file with the specific name.
   - **Why:** This is useful when you are looking for a file with the exact name.
   - *Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/*
