@@ -5,18 +5,20 @@
   - **Why:** This is useful when you are looking for a file with the exact name.
   - *Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/*
 
-- ***Example 1***
+#### - ***Example 1***
 ```console
-[cs15lwi23aoa@ieng6-202]:berlitz1:512$ find -name IntroEgypt.txt
+[cs15lwi23aoa@ieng6-202]:berlitz1:590$ find . -name IntroEgypt.txt
 ./IntroEgypt.txt
 ```
+  
   - **What:** This command searched for files with the title `IntroEgypt.txt`. 
   - **Why:** The command is useful since it found files with the specified name. 
 
 
-- ***Example 2***
+
+#### - ***Example 2***
 ```console
-[cs15lwi23aoa@ieng6-202]:berlitz1:514$ find -name HistoryJamaica.txt
+[cs15lwi23aoa@ieng6-202]:berlitz1:514$ find . -name HistoryJamaica.txt
 ./HistoryJamaica.txt
 ```
   - **What:** This command searched for files with the title `HistoryJamaica.txt`. 
@@ -29,7 +31,7 @@
   - **Why:** This is useful when you are looking for files of a specific type. 
   - *Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/*
 
-- ***Example 1***
+#### - ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-202]:skill-demo1-data:579$ find written_2 -type d
 written_2
@@ -49,7 +51,7 @@ written_2/travel_guides/berlitz2
   - **Why:** The command is useful since it is able to show which directories are in a directory.
 
 
-- ***Example 2***
+#### - ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-202]:skill-demo1-data:582$ find written_2 -type f  
 written_2/non-fiction/OUP/Abernathy/ch1.txt
@@ -282,55 +284,20 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 
 ----
 
-### 3. `grep -r` / `grep --recursive`
-  - **What:** This command option greps all files in each directory recursively
-  - **Why:** This is useful to grep all the files inside a directory with many different directories inside it, removing the need to go through each directory individually.
-  - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+### 3. `find <path> -atime <days>`
+  - **What:** This command option finds all files in the path that have been accessed back certain days
+  - **Why:** This is useful to find which files have been accessed most recently in a directory.
+  - *Source: https://www.tecmint.com/35-practical-examples-of-linux-find-command/*
 
 - ***Example 1***
 ```console
-[cs15lwi23aoa@ieng6-201]:skill-demo1-data:518$ grep -r "lotus" ./written_2/travel_guides          
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        whose navel a lotus grew bearing Brahma whose task it was to create the
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        world. Vishnu, a four-armed god with mace, conch, 
-discus, and lotus,
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        white elephant holding a lotus flower in his trunk had entered her
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        highlights the emperor’s aesthetic, in the lotu 
- calyx on the gateway’s
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        gardens growing melons, tomatoes, cucumbers, and lotus root in a mesh
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        resting on the inverted lotus that once connected it to the pillar.
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        as well as plentiful trickling streams, lotus ponds, and lakes covered
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        lotus-covered bathing tank.
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        arms”) wielding bells, wheels, and lotus flowers. However,
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        a ring of giant lotus leaves, is Nara’s celebrated Daibutsu, or Great
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        white lotus blossoms. The myth-shrouded lakes are said to be the home
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        settlement beneath the surface. Outside lotu 
--blossom season, the lakes
-./written_2/travel_guides/berlitz2/Bali-WhereToGo.txt:Museum Puri Lukisan is reached by a gateway across the road from the tourist office on Jalan Raya. In lush gardens, a fine hall has been built to house the works 
-from the collection of the Dutch painter, Rudolf Bonnet, who helped guide the Pita Maha art movement in the 
-1930s, and from the collection of his patron, Cokorda Gde Agung Sukawati, who governed Ubud for many decades. Look for the work of I Gusti Nyoman Lempad, one of the first artists to adopt Western techniques and bring the flat wayang figures of traditional painting to life. Remarkably, he was probably over 50 years old when he met Walter Spies and Bonnet (see page 53). Even he did not know his exact age. The museum’s estimate that he died in 1978 at the age of 115 may be an exaggeration. I Gusti Nyoman Lempad was chief architect and sculptor to the ruling Sukawati family of Ubud, and designed the Pura Saraswati temple, with its beautiful lotus pond and water garden, on Jalan Raya.
-./written_2/travel_guides/berlitz2/China-WhereToGo.txt:The landscape beyond the palace compound features many of the romantic elements of Chinese tradition: interconnected lakes and lotus ponds, forests, causeways and arched bridges, ornate pavilions, and towering pagodas. The Tower of Mist and Rain (Yanyulou), a two-story lakeside pavilion in the southern style, was favored by emperors for its foggy views resembling those of an old Chinese painting. Tourists can cross the lakes in hand-poled ferryboats or drift at their own pace in a rowing boat. North of the lakes there are hiking trails in the Garden of Ten Thousand Trees (Wanahuyuan), where Emperor Qianlong gave an audience in 1793 to the first British ambassador to set foot in China, Lord Macartney. The meeting did not go well.
-./written_2/travel_guides/berlitz2/China-WhereToGo.txt:One of the country’s best-known Buddhist monasteries, Hangzhou’s Lingyin Temple (“Spirits’ Retreat”), west of West Lake, attracts crowds of Chinese tourists and 
-believers. The monks — for this is a working monastery — are kept busy supplying joss (incense) sticks to devout or merely fun-loving visitors. The main hall contains a statue of the Buddha seated on a lotus leaf. Carved of camphorwood, it is 191⁄2 m (64 ft) high and thought to be the largest such sculpture in China. Nearby, the “Peak That Flew from Afar” (Feilaifeng) shelters 380 Buddhist stone carvings created during the Yuan 
-Dynasty and four sacred caves. The most famous sculpture is of the Laughing Buddha with a bulging belly, an 
-animated figure fashioned about a thousand years ago.
-./written_2/travel_guides/berlitz2/China-WhereToGo.txt:The subtleties of Tang-Dynasty art can be seen in the Qianqi cave temple, begun in the year 641, and in the Fengxian cave temple, constructed a few years later. 
-The Fengxian cave shelters a 17-m (56-ft) Buddha, seated atop a thousand-petaled lotus and accompanied by lesser but equally brilliant statues of his disciples. The fierce, heavenly guard trampling a devil underfoot 
-is thought to bring good luck to those who put their arms around his ankle, but an iron fence keeps most onlookers at bay.
-./written_2/travel_guides/berlitz2/China-WhereToGo.txt:Yueyang (Yoyang), Hunan Province. Flamboyant upswept 
-roofs surmount Yueyang Tower, a Tang landmark that has been rebuilt in Song Dynasty style. This three-tiered tower overlooks Lake Dongting, one of China’s biggest lakes. In summer months huge lotus flowers rise above the surface of the water. Junshan, an island in the lake endowed with many hills (and numerous legends), produces the rare and fragrant “silver needle” tea.
-./written_2/travel_guides/berlitz2/Nepal-History.txt:Legend holds that the Kathmandu Valley was once a vast 
-lake, upon which floated a giant lotus flower, from which emanated the light of Swayambhu, the primordial Buddha. When the Tibetan god Manjushri came to view this light, he was unable to get close enough for a good look, so he took his great sword and slashed through the mountains surrounding the valley to release the waters of the lake. (That is the myth. The fact, according to geologists, is that the Kathmandu Valley was indeed once a lake, though the valley’s waters now drain through the narrow cleft of Chobar Gorge, which was most likely created by a large earthquake.)
-./written_2/travel_guides/berlitz2/Nepal-History.txt:In Nepal, both Hindu and Buddhist temples may take the 
-pagoda form, but all the Indian-style stone shikara tower temples are Hindu and all the white dome-like stupas are Buddhist. The small trail-side shrines in the high mountains, called chortens, are also Buddhist, and often surrounded by stones carved with the Om mani padme hum incantation —  “Hail, jewel in the flower of the lotus.” Small stupas found around Buddhist and Hindu temples and known as chaityas are erected to hold relics or in memory of individuals.
-./written_2/travel_guides/berlitz2/Nepal-History.txt:Vishnu, for example, can be Narayan, floating on the primeval ocean or lying on a bed of snakes. He is also Rama, the model prince and star of the Ramayana epic, and Krishna, a lusty hero who is the central figure of the Bhagavad Gita, a section of the Mahabharata epic. 
-As Rama, he usually carries a bow and arrows. As Krishna, he is usually depicted with a blue face, an after-effect of swallowing a poison that threatened the world, and is often represented playing a flute or sporting with the milkmaids he seduced. As himself Vishnu is shown with four arms, holding a lotus, a club, a conch shell, and a disk, often seated on a snake, symbolizing eternity. Vishnu may appear in art as a fish, a tortoise, a boar, a man-lion, or a dwarf, the first five of his nine avatars. The ninth, according to some Hindus, was the Buddha. His tenth incarnation, to rescue the world from evil by destroying it and beginning a new cycle, is due about 540,000 years from now.
-./written_2/travel_guides/berlitz2/Nepal-WhereToGo.txt:The road north from Kathmandu leads 8 km (5 miles) to Budhanilkantha, and a giant statue of Vishnu reclining on a bed of snakes. Carved from one black stone and 
-set in a sunken tank of water, the 5-m (16-ft) image dates from the seventh century. Legend has it that as Vishnu floated partly submerged in the primeval ocean, a lotus grew out of his navel, issuing Brahma, whose sole task was to create the world. The king cannot visit this shrine, as to look upon what is considered to be an image of himself, an incarnation of Vishnu, would be a forecast of death. On festival days worshippers 
-blanket the statue with flowers. Beyond is Shivapuri Watershed and Wildlife Preserve, good place for a day hike.
+[cs15lwi23aoa@ieng6-202]:berlitz1:609$ find . -atime 0
+.
+./HistoryIsrael.txt
 ```
 
-  - **What:** This command option greps all files in directories within `./written_2/travel_guides` recursively for the word `lotus`.
-  - **Why:** This is useful since it is able to look through all the txt files for `lotus` as long as they are within `travel_guides` or a sub-directory of `travel_guides`.
+  - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened HistoryIsrael.txt recently, it prints that.
+  - **Why:** This is useful since it is able to see which files have been accessed recently or until a certain day. It can keep a history on the files.
 
 - ***Example 2***
 ```console
