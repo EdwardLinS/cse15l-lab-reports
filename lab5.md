@@ -289,7 +289,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
   - **Why:** This is useful to find which files have been accessed most recently in a directory.
   - *Source: https://www.tecmint.com/35-practical-examples-of-linux-find-command/*
 
-- ***Example 1***
+#### - ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-202]:berlitz1:609$ find . -atime 0
 .
@@ -299,7 +299,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
   - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened the current directory and HistoryIsrael.txt recently, it prints that.
   - **Why:** This is useful since it is able to see which files have been accessed recently or until a certain day. It can keep a history on the files.
 
-- ***Example 2***
+#### - ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-202]:berlitz1:613$ find . -atime 0
 .
@@ -318,7 +318,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
   - **Why:** This is useful to find which files are the largest or smallest in a path.
   - *Source: https://www.tecmint.com/35-practical-examples-of-linux-find-command/*
 
-- ***Example 1***
+#### - ***Example 1***
 ```console
 [cs15lwi23aoa@ieng6-202]:written_2:638$ find . -size 1M
 .
@@ -561,7 +561,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
   - **What:** This command option finds files in `written_2` that have a size of  `1M`.
   - **Why:** This is useful since it is able to find file of a specific size. 
 
-- ***Example 2***
+#### - ***Example 2***
 ```console
 [cs15lwi23aoa@ieng6-202]:Abernathy:646$ find . -size 1M
 .
