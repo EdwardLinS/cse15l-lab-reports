@@ -1,320 +1,284 @@
 # Command: `find`
 ## 4 *find* command options
-### 1. `grep -i` / `grep --ignore-case`
-  - **What:** This command option matches without matching case.
-  - **Why:** This is useful when you are purely looking for the pattern and not caring about specific case of the pattern.
-  - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+### 1. `find <file-path> -name <text>`
+  - **What:** This command option finds the file with the specific name.
+  - **Why:** This is useful when you are looking for a file with the exact name.
+  - *Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/*
 
 - ***Example 1***
 ```console
-[cs15lwi23aoa@ieng6-201]:skill-demo1-data:501$ grep -i "lotus" ./written_2/travel_guides/berlitz1/*.txt 
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        whose navel a lotus grew bearing Brahma whose task it was to create the
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        world. Vishnu, a four-armed god with mace, conch, discus, and lotus,
-./written_2/travel_guides/berlitz1/IntroIndia.txt:        white elephant holding a lotus flower in his trunk had entered her
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        highlights the emperor’s aesthetic, in the lotus calyx on the gateway’s
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        gardens growing melons, tomatoes, cucumbers, and lotus root in a mesh
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        resting on the inverted lotus that once connected it to the pillar.
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        as well as plentiful trickling streams, lotus ponds, and lakes covered
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        the arcaded Golden Lotus Tank and the temple’s bathing-place. At the
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        lotus-covered bathing tank.
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        arms”) wielding bells, wheels, and lotus flowers. However,
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        a ring of giant lotus leaves, is Nara’s celebrated Daibutsu, or Great
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        white lotus blossoms. The myth-shrouded lakes are said to be the home
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        settlement beneath the surface. Outside lotus-blossom season, the lakes
+[cs15lwi23aoa@ieng6-202]:berlitz1:512$ find -name IntroEgypt.txt
+./IntroEgypt.txt
 ```
-  - **What:** This command searched for files with the word `lotus` regardless of case. 
-  - **Why:** The command is useful since it found files not only with `lotus` but with `Lotus` as well. 
+  - **What:** This command searched for files with the title `IntroEgypt.txt`. 
+  - **Why:** The command is useful since it found files with the specified name. 
 
 
 - ***Example 2***
 ```console
-[cs15lwi23aoa@ieng6-201]:skill-demo1-data:515$ grep --ignore-case "pride" ./written_2/travel_guides/berlitz1/*.txt
-./written_2/travel_guides/berlitz1/HistoryEgypt.txt:        national pride by wresting the Suez Canal out of British hands he
-./written_2/travel_guides/berlitz1/HistoryEgypt.txt:        Limited success in 1973 restored some national pride when the Sinai was
-./written_2/travel_guides/berlitz1/HistoryFWI.txt:        France in 1946 — a source of great pride to many. 
-More importantly, it
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:        national pride sufficiently to oust the English from France 20 years
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:        the pride of the Louvre. A new opulent architecture blossomed with the
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:        pride found its perfect expression in the Eiffel Tower, thrust into the
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:        power in the national capital. By allowing the 
-local pride of such
-./written_2/travel_guides/berlitz1/IntroEdinburgh.txt:        treasures with great pride. Edinburgh Castle is a treasure in
-./written_2/travel_guides/berlitz1/IntroEdinburgh.txt:        1707. The sense of an impending new era can be discerned in the pride,
-./written_2/travel_guides/berlitz1/IntroFrance.txt:        pride, the nation’s cultural wealth is just as important. Philosophy
-./written_2/travel_guides/berlitz1/IntroFrance.txt:        high technology and is happy to share its pride in these advances. With
-./written_2/travel_guides/berlitz1/IntroItaly.txt:        sustains a solid and pugnacious local pride from historic division into
-./written_2/travel_guides/berlitz1/IntroJamaica.txt:        within, working on a principle of pride in oneself and in one’s roots.
-./written_2/travel_guides/berlitz1/WhatToJamaica.txt:        themselves and their culture with national pride.
-./written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:        year. Family pride mixes with economics at these events. Farming can be
-./written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:        for visitors and of pride to the farmers who breed and train them. Each
-./written_2/travel_guides/berlitz1/WhatToLasVegas.txt:        pride.
-./written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:        pride and designed as a mini-Parthenon, in deference to the
-./written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:        take pride of place — the zoo has the world’s largest group in
-./written_2/travel_guides/berlitz1/WhereToEgypt.txt:        Memphis and constitutes the largest royal graveyard in Egypt. Pride of
-./written_2/travel_guides/berlitz1/WhereToEgypt.txt:        A splendid Red granite sarcophagus has pride of 
-place in
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:        metropolis. Renewed pride in France’s provincial cities is reducing
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:        pride.
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:        dialect, architecture, cuisine, and local prid 
- — the best of both
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:        centuries. But the museum’s pride and joy is its great ceramics
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:        textile, and industrial center with a bouncy pride, a taste for the
-./written_2/travel_guides/berlitz1/WhereToGreek.txt:        visit. Pride of place goes to a 15th-century icon of the prophet
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        symbol of power and pride, was an understandable choice as the emblem
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:        pride is a 200-year-old banyan tree, the Ficus bengalensis, or
-./written_2/travel_guides/berlitz1/WhereToIsrael.txt:        long climb to swell national pride, and army recruits are sworn in here
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        proclaims the inordinate but certainly justified civic pride of the
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        restaurants and boutiques, a vibrant local prid 
- nurtured by economic
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        chamber of the Nine Patricians), the full force 
-of Siena’s civic pride
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        Annunciation and Madonna with Angels. But Umbria’s pride and joy is the
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        inspired Shakespeare. In Emilia-Romagna, the pride and creativity of
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        With an inherent pride so justifiably timeless, 
-the
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        government to Rome, Milan prides itself on being the country’s
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        Titian, Correggio, and Tintoretto, pride of place — and a room to
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:        The pride of Turin, as in so many Italian cities, is not
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        Brooklynese. Ignore the proprieties — or offend 
-the pride of an
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        waterfront itself is Nippon-maru Memorial Park, 
-where pride of place
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        sprawling rival to the east. Osakans pride themselves on being warmer,
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:        The pride and joy of the neighborhood is the Meganebashi,
-./written_2/travel_guides/berlitz1/WhereToJerusalem.txt:        and became the pride of the Jewish community in Palestine under British
-./written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:        restored. Pride of place goes to SL Dolly, the oldest mechanically
-./written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:        Pride Celebration, a lively two-day festival and parade which has grown
-./written_2/travel_guides/berlitz1/WhereToMadrid.txt:        Madrid’s pride, the Prado museum, is indisputably the
-./written_2/travel_guides/berlitz1/WhereToMadrid.txt:        museum’s greatest pride, spotlighted in its own niche on the ground
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        Plant life. The pride of the mountain is its 
-1,500
+[cs15lwi23aoa@ieng6-202]:berlitz1:514$ find -name HistoryJamaica.txt
+./HistoryJamaica.txt
 ```
-  - **What:** This command searched for files with the word `pride` regardless of case. 
-  - **Why:** The command is useful since it found files not only with `pride` but with `Pride` as well. 
+  - **What:** This command searched for files with the title `HistoryJamaica.txt`. 
+  - **Why:** The command is useful since it found files with the specified name. 
 
 ----
 
-### 2. `grep -c` / `grep --count`
-  - **What:** This command option prints out count of matching lines instead of normal grep output.
-  - **Why:** This is useful when the count of files is necessary and not file path or content.
-  - *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+### 2. `find <file-path> -type <file-type>`
+  - **What:** This command option finds the file with the specified type.
+  - **Why:** This is useful when you are looking for files of a specific type. 
+  - *Source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/*
 
 - ***Example 1***
 ```console
-[cs15lwi23aoa@ieng6-203]:skill-demo1-data:501$ grep -c "lotus" ./written_2/travel_guides/berlitz1/*.txt     
-./written_2/travel_guides/berlitz1/HandRHawaii.txt:0
-./written_2/travel_guides/berlitz1/HandRHongKong.txt:0
-./written_2/travel_guides/berlitz1/HandRIbiza.txt:0
-./written_2/travel_guides/berlitz1/HandRIsrael.txt:0
-./written_2/travel_guides/berlitz1/HandRIstanbul.txt:0
-./written_2/travel_guides/berlitz1/HandRJamaica.txt:0
-./written_2/travel_guides/berlitz1/HandRJerusalem.txt:0
-./written_2/travel_guides/berlitz1/HandRLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/HandRLasVegas.txt:0
-./written_2/travel_guides/berlitz1/HandRLisbon.txt:0
-./written_2/travel_guides/berlitz1/HandRLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/HandRMadeira.txt:0
-./written_2/travel_guides/berlitz1/HandRMadrid.txt:0
-./written_2/travel_guides/berlitz1/HandRMallorca.txt:0
-./written_2/travel_guides/berlitz1/HistoryDublin.txt:0
-./written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/HistoryEgypt.txt:0
-./written_2/travel_guides/berlitz1/HistoryFWI.txt:0
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:0
-./written_2/travel_guides/berlitz1/HistoryGreek.txt:0
-./written_2/travel_guides/berlitz1/HistoryHawaii.txt:0
-./written_2/travel_guides/berlitz1/HistoryHongKong.txt:0
-./written_2/travel_guides/berlitz1/HistoryIbiza.txt:0
-./written_2/travel_guides/berlitz1/HistoryIndia.txt:0
-./written_2/travel_guides/berlitz1/HistoryIsrael.txt:0
-./written_2/travel_guides/berlitz1/HistoryIstanbul.txt:0
-./written_2/travel_guides/berlitz1/HistoryItaly.txt:0
-./written_2/travel_guides/berlitz1/HistoryJamaica.txt:0
-./written_2/travel_guides/berlitz1/HistoryJapan.txt:0
-./written_2/travel_guides/berlitz1/HistoryJerusalem.txt:0
-./written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/HistoryLasVegas.txt:0
-./written_2/travel_guides/berlitz1/HistoryMadeira.txt:0
-./written_2/travel_guides/berlitz1/HistoryMadrid.txt:0
-./written_2/travel_guides/berlitz1/HistoryMalaysia.txt:0
-./written_2/travel_guides/berlitz1/HistoryMallorca.txt:0
-./written_2/travel_guides/berlitz1/IntroDublin.txt:0
-./written_2/travel_guides/berlitz1/IntroEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/IntroEgypt.txt:0
-./written_2/travel_guides/berlitz1/IntroFWI.txt:0
-./written_2/travel_guides/berlitz1/IntroFrance.txt:0
-./written_2/travel_guides/berlitz1/IntroGreek.txt:0
-./written_2/travel_guides/berlitz1/IntroHongKong.txt:0
-./written_2/travel_guides/berlitz1/IntroIbiza.txt:0
-./written_2/travel_guides/berlitz1/IntroIndia.txt:3
-./written_2/travel_guides/berlitz1/IntroIsrael.txt:0
-./written_2/travel_guides/berlitz1/IntroIstanbul.txt:0
-./written_2/travel_guides/berlitz1/IntroItaly.txt:0
-./written_2/travel_guides/berlitz1/IntroJamaica.txt:0
-./written_2/travel_guides/berlitz1/IntroJapan.txt:0
-./written_2/travel_guides/berlitz1/IntroJerusalem.txt:0
-./written_2/travel_guides/berlitz1/IntroLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/IntroLasVegas.txt:0
-./written_2/travel_guides/berlitz1/IntroLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/IntroMadeira.txt:0
-./written_2/travel_guides/berlitz1/IntroMadrid.txt:0
-./written_2/travel_guides/berlitz1/IntroMalaysia.txt:0
-./written_2/travel_guides/berlitz1/IntroMallorca.txt:0
-./written_2/travel_guides/berlitz1/JungleMalaysia.txt:0
-./written_2/travel_guides/berlitz1/WhatToDublin.txt:0
-./written_2/travel_guides/berlitz1/WhatToEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/WhatToEgypt.txt:0
-./written_2/travel_guides/berlitz1/WhatToFWI.txt:0
-./written_2/travel_guides/berlitz1/WhatToFrance.txt:0
-./written_2/travel_guides/berlitz1/WhatToGreek.txt:0
-./written_2/travel_guides/berlitz1/WhatToHawaii.txt:0
-./written_2/travel_guides/berlitz1/WhatToHongKong.txt:0
-./written_2/travel_guides/berlitz1/WhatToIbiza.txt:0
-./written_2/travel_guides/berlitz1/WhatToIndia.txt:0
-./written_2/travel_guides/berlitz1/WhatToIsrael.txt:0
-./written_2/travel_guides/berlitz1/WhatToIstanbul.txt:0
-./written_2/travel_guides/berlitz1/WhatToItaly.txt:0
-./written_2/travel_guides/berlitz1/WhatToJamaica.txt:0
-./written_2/travel_guides/berlitz1/WhatToJapan.txt:0
-./written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/WhatToLasVegas.txt:0
-./written_2/travel_guides/berlitz1/WhatToLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/WhatToMadeira.txt:0
-./written_2/travel_guides/berlitz1/WhatToMalaysia.txt:0
-./written_2/travel_guides/berlitz1/WhatToMallorca.txt:0
-./written_2/travel_guides/berlitz1/WhereToDublin.txt:0
-./written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/WhereToEgypt.txt:0
-./written_2/travel_guides/berlitz1/WhereToFWI.txt:0
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:0
-./written_2/travel_guides/berlitz1/WhereToGreek.txt:0
-./written_2/travel_guides/berlitz1/WhereToHawaii.txt:0
-./written_2/travel_guides/berlitz1/WhereToHongKong.txt:0
-./written_2/travel_guides/berlitz1/WhereToIbiza.txt:0
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:5
-./written_2/travel_guides/berlitz1/WhereToIsrael.txt:0
-./written_2/travel_guides/berlitz1/WhereToIstanbul.txt:0
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:0
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:2
-./written_2/travel_guides/berlitz1/WhereToJerusalem.txt:0
-./written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/WhereToMadeira.txt:0
-./written_2/travel_guides/berlitz1/WhereToMadrid.txt:0
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:2
-./written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
+[cs15lwi23aoa@ieng6-202]:skill-demo1-data:579$ find written_2 -type d
+written_2
+written_2/non-fiction
+written_2/non-fiction/OUP
+written_2/non-fiction/OUP/Abernathy
+written_2/non-fiction/OUP/Berk
+written_2/non-fiction/OUP/Castro
+written_2/non-fiction/OUP/Fletcher
+written_2/non-fiction/OUP/Kauffman
+written_2/non-fiction/OUP/Rybczynski
+written_2/travel_guides
+written_2/travel_guides/berlitz1
+written_2/travel_guides/berlitz2
 ```
-  - **What:** This command searched for how many times the word `lotus` appeared in the all the txt files in the directory. 
-  - **Why:** The command is useful since it is able to show which files have the word `lotus` and how many times the word appears in the files that do have the word.
+  - **What:** This command searched for all the directories in the directory. 
+  - **Why:** The command is useful since it is able to show which directories are in a directory.
 
 
 - ***Example 2***
 ```console
-[cs15lwi23aoa@ieng6-203]:skill-demo1-data:504$ grep --count "pride" ./written_2/travel_guides/berlitz1/*.txt
-./written_2/travel_guides/berlitz1/HandRHawaii.txt:0
-./written_2/travel_guides/berlitz1/HandRHongKong.txt:0
-./written_2/travel_guides/berlitz1/HandRIbiza.txt:0
-./written_2/travel_guides/berlitz1/HandRIsrael.txt:0
-./written_2/travel_guides/berlitz1/HandRIstanbul.txt:0
-./written_2/travel_guides/berlitz1/HandRJamaica.txt:0
-./written_2/travel_guides/berlitz1/HandRJerusalem.txt:0
-./written_2/travel_guides/berlitz1/HandRLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/HandRLasVegas.txt:0
-./written_2/travel_guides/berlitz1/HandRLisbon.txt:0
-./written_2/travel_guides/berlitz1/HandRLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/HandRMadeira.txt:0
-./written_2/travel_guides/berlitz1/HandRMadrid.txt:0
-./written_2/travel_guides/berlitz1/HandRMallorca.txt:0
-./written_2/travel_guides/berlitz1/HistoryDublin.txt:0
-./written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/HistoryEgypt.txt:2
-./written_2/travel_guides/berlitz1/HistoryFWI.txt:1
-./written_2/travel_guides/berlitz1/HistoryFrance.txt:4
-./written_2/travel_guides/berlitz1/HistoryGreek.txt:0
-./written_2/travel_guides/berlitz1/HistoryHawaii.txt:0
-./written_2/travel_guides/berlitz1/HistoryHongKong.txt:0
-./written_2/travel_guides/berlitz1/HistoryIbiza.txt:0
-./written_2/travel_guides/berlitz1/HistoryIndia.txt:0
-./written_2/travel_guides/berlitz1/HistoryIsrael.txt:0
-./written_2/travel_guides/berlitz1/HistoryIstanbul.txt:0
-./written_2/travel_guides/berlitz1/HistoryItaly.txt:0
-./written_2/travel_guides/berlitz1/HistoryJamaica.txt:0
-./written_2/travel_guides/berlitz1/HistoryJapan.txt:0
-./written_2/travel_guides/berlitz1/HistoryJerusalem.txt:0
-./written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/HistoryLasVegas.txt:0
-./written_2/travel_guides/berlitz1/HistoryMadeira.txt:0
-./written_2/travel_guides/berlitz1/HistoryMadrid.txt:0
-./written_2/travel_guides/berlitz1/HistoryMalaysia.txt:0
-./written_2/travel_guides/berlitz1/HistoryMallorca.txt:0
-./written_2/travel_guides/berlitz1/IntroDublin.txt:0
-./written_2/travel_guides/berlitz1/IntroEdinburgh.txt:2
-./written_2/travel_guides/berlitz1/IntroEgypt.txt:0
-./written_2/travel_guides/berlitz1/IntroFWI.txt:0
-./written_2/travel_guides/berlitz1/IntroFrance.txt:2
-./written_2/travel_guides/berlitz1/IntroGreek.txt:0
-./written_2/travel_guides/berlitz1/IntroHongKong.txt:0
-./written_2/travel_guides/berlitz1/IntroIbiza.txt:0
-./written_2/travel_guides/berlitz1/IntroIndia.txt:0
-./written_2/travel_guides/berlitz1/IntroIsrael.txt:0
-./written_2/travel_guides/berlitz1/IntroIstanbul.txt:0
-./written_2/travel_guides/berlitz1/IntroItaly.txt:1
-./written_2/travel_guides/berlitz1/IntroJamaica.txt:1
-./written_2/travel_guides/berlitz1/IntroJapan.txt:0
-./written_2/travel_guides/berlitz1/IntroJerusalem.txt:0
-./written_2/travel_guides/berlitz1/IntroLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/IntroLasVegas.txt:0
-./written_2/travel_guides/berlitz1/IntroLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/IntroMadeira.txt:0
-./written_2/travel_guides/berlitz1/IntroMadrid.txt:0
-./written_2/travel_guides/berlitz1/IntroMalaysia.txt:0
-./written_2/travel_guides/berlitz1/IntroMallorca.txt:0
-./written_2/travel_guides/berlitz1/JungleMalaysia.txt:0
-./written_2/travel_guides/berlitz1/WhatToDublin.txt:0
-./written_2/travel_guides/berlitz1/WhatToEdinburgh.txt:0
-./written_2/travel_guides/berlitz1/WhatToEgypt.txt:0
-./written_2/travel_guides/berlitz1/WhatToFWI.txt:0
-./written_2/travel_guides/berlitz1/WhatToFrance.txt:0
-./written_2/travel_guides/berlitz1/WhatToGreek.txt:0
-./written_2/travel_guides/berlitz1/WhatToHawaii.txt:0
-./written_2/travel_guides/berlitz1/WhatToHongKong.txt:0
-./written_2/travel_guides/berlitz1/WhatToIbiza.txt:0
-./written_2/travel_guides/berlitz1/WhatToIndia.txt:0
-./written_2/travel_guides/berlitz1/WhatToIsrael.txt:0
-./written_2/travel_guides/berlitz1/WhatToIstanbul.txt:0
-./written_2/travel_guides/berlitz1/WhatToItaly.txt:0
-./written_2/travel_guides/berlitz1/WhatToJamaica.txt:1
-./written_2/travel_guides/berlitz1/WhatToJapan.txt:0
-./written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:2
-./written_2/travel_guides/berlitz1/WhatToLasVegas.txt:1
-./written_2/travel_guides/berlitz1/WhatToLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/WhatToMadeira.txt:0
-./written_2/travel_guides/berlitz1/WhatToMalaysia.txt:0
-./written_2/travel_guides/berlitz1/WhatToMallorca.txt:0
-./written_2/travel_guides/berlitz1/WhereToDublin.txt:0
-./written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:2
-./written_2/travel_guides/berlitz1/WhereToEgypt.txt:1
-./written_2/travel_guides/berlitz1/WhereToFWI.txt:0
-./written_2/travel_guides/berlitz1/WhereToFrance.txt:5
-./written_2/travel_guides/berlitz1/WhereToGreek.txt:0
-./written_2/travel_guides/berlitz1/WhereToHawaii.txt:0
-./written_2/travel_guides/berlitz1/WhereToHongKong.txt:0
-./written_2/travel_guides/berlitz1/WhereToIbiza.txt:0
-./written_2/travel_guides/berlitz1/WhereToIndia.txt:2
-./written_2/travel_guides/berlitz1/WhereToIsrael.txt:1
-./written_2/travel_guides/berlitz1/WhereToIstanbul.txt:0
-./written_2/travel_guides/berlitz1/WhereToItaly.txt:9
-./written_2/travel_guides/berlitz1/WhereToJapan.txt:4
-./written_2/travel_guides/berlitz1/WhereToJerusalem.txt:1
-./written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:0
-./written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:0
-./written_2/travel_guides/berlitz1/WhereToMadeira.txt:0
-./written_2/travel_guides/berlitz1/WhereToMadrid.txt:2
-./written_2/travel_guides/berlitz1/WhereToMalaysia.txt:1
-./written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
+[cs15lwi23aoa@ieng6-202]:skill-demo1-data:582$ find written_2 -type f  
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch8.txt
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
+written_2/non-fiction/OUP/Castro/chA.txt
+written_2/non-fiction/OUP/Castro/chB.txt
+written_2/non-fiction/OUP/Castro/chC.txt
+written_2/non-fiction/OUP/Castro/chL.txt
+written_2/non-fiction/OUP/Castro/chM.txt
+written_2/non-fiction/OUP/Castro/chN.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+written_2/non-fiction/OUP/Castro/chP.txt
+written_2/non-fiction/OUP/Castro/chQ.txt
+written_2/non-fiction/OUP/Castro/chR.txt
+written_2/non-fiction/OUP/Castro/chV.txt
+written_2/non-fiction/OUP/Castro/chW.txt
+written_2/non-fiction/OUP/Castro/chY.txt
+written_2/non-fiction/OUP/Castro/chZ.txt
+written_2/non-fiction/OUP/Fletcher/ch1.txt
+written_2/non-fiction/OUP/Fletcher/ch10.txt
+written_2/non-fiction/OUP/Fletcher/ch2.txt
+written_2/non-fiction/OUP/Fletcher/ch5.txt
+written_2/non-fiction/OUP/Fletcher/ch6.txt
+written_2/non-fiction/OUP/Fletcher/ch9.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch10.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch5.txt
+written_2/non-fiction/OUP/Kauffman/ch6.txt
+written_2/non-fiction/OUP/Kauffman/ch7.txt
+written_2/non-fiction/OUP/Kauffman/ch8.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/non-fiction/OUP/Rybczynski/ch3.txt
+written_2/travel_guides/berlitz1/HandRHawaii.txt
+written_2/travel_guides/berlitz1/HandRHongKong.txt
+written_2/travel_guides/berlitz1/HandRIbiza.txt
+written_2/travel_guides/berlitz1/HandRIsrael.txt
+written_2/travel_guides/berlitz1/HandRIstanbul.txt
+written_2/travel_guides/berlitz1/HandRJamaica.txt
+written_2/travel_guides/berlitz1/HandRJerusalem.txt
+written_2/travel_guides/berlitz1/HandRLakeDistrict.txt
+written_2/travel_guides/berlitz1/HandRLasVegas.txt
+written_2/travel_guides/berlitz1/HandRLisbon.txt
+written_2/travel_guides/berlitz1/HandRLosAngeles.txt
+written_2/travel_guides/berlitz1/HandRMadeira.txt
+written_2/travel_guides/berlitz1/HandRMadrid.txt
+written_2/travel_guides/berlitz1/HandRMallorca.txt
+written_2/travel_guides/berlitz1/HistoryDublin.txt
+written_2/travel_guides/berlitz1/HistoryEdinburgh.txt
+written_2/travel_guides/berlitz1/HistoryEgypt.txt
+written_2/travel_guides/berlitz1/HistoryFWI.txt
+written_2/travel_guides/berlitz1/HistoryFrance.txt
+written_2/travel_guides/berlitz1/HistoryGreek.txt
+written_2/travel_guides/berlitz1/HistoryHawaii.txt
+written_2/travel_guides/berlitz1/HistoryHongKong.txt
+written_2/travel_guides/berlitz1/HistoryIbiza.txt
+written_2/travel_guides/berlitz1/HistoryIndia.txt
+written_2/travel_guides/berlitz1/HistoryIsrael.txt
+written_2/travel_guides/berlitz1/HistoryIstanbul.txt
+written_2/travel_guides/berlitz1/HistoryItaly.txt
+written_2/travel_guides/berlitz1/HistoryJamaica.txt
+written_2/travel_guides/berlitz1/HistoryJapan.txt
+written_2/travel_guides/berlitz1/HistoryJerusalem.txt
+written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt
+written_2/travel_guides/berlitz1/HistoryLasVegas.txt
+written_2/travel_guides/berlitz1/HistoryMadeira.txt
+written_2/travel_guides/berlitz1/HistoryMadrid.txt
+written_2/travel_guides/berlitz1/HistoryMalaysia.txt
+written_2/travel_guides/berlitz1/HistoryMallorca.txt
+written_2/travel_guides/berlitz1/IntroDublin.txt
+written_2/travel_guides/berlitz1/IntroEdinburgh.txt
+written_2/travel_guides/berlitz1/IntroEgypt.txt
+written_2/travel_guides/berlitz1/IntroFWI.txt
+written_2/travel_guides/berlitz1/IntroFrance.txt
+written_2/travel_guides/berlitz1/IntroGreek.txt
+written_2/travel_guides/berlitz1/IntroHongKong.txt
+written_2/travel_guides/berlitz1/IntroIbiza.txt
+written_2/travel_guides/berlitz1/IntroIndia.txt
+written_2/travel_guides/berlitz1/IntroIsrael.txt
+written_2/travel_guides/berlitz1/IntroIstanbul.txt
+written_2/travel_guides/berlitz1/IntroItaly.txt
+written_2/travel_guides/berlitz1/IntroJamaica.txt
+written_2/travel_guides/berlitz1/IntroJapan.txt
+written_2/travel_guides/berlitz1/IntroJerusalem.txt
+written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
+written_2/travel_guides/berlitz1/IntroLasVegas.txt
+written_2/travel_guides/berlitz1/IntroLosAngeles.txt
+written_2/travel_guides/berlitz1/IntroMadeira.txt
+written_2/travel_guides/berlitz1/IntroMadrid.txt
+written_2/travel_guides/berlitz1/IntroMalaysia.txt
+written_2/travel_guides/berlitz1/IntroMallorca.txt
+written_2/travel_guides/berlitz1/JungleMalaysia.txt
+written_2/travel_guides/berlitz1/WhatToDublin.txt
+written_2/travel_guides/berlitz1/WhatToEdinburgh.txt
+written_2/travel_guides/berlitz1/WhatToEgypt.txt
+written_2/travel_guides/berlitz1/WhatToFWI.txt
+written_2/travel_guides/berlitz1/WhatToFrance.txt
+written_2/travel_guides/berlitz1/WhatToGreek.txt
+written_2/travel_guides/berlitz1/WhatToHawaii.txt
+written_2/travel_guides/berlitz1/WhatToHongKong.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToIndia.txt
+written_2/travel_guides/berlitz1/WhatToIsrael.txt
+written_2/travel_guides/berlitz1/WhatToIstanbul.txt
+written_2/travel_guides/berlitz1/WhatToItaly.txt
+written_2/travel_guides/berlitz1/WhatToJamaica.txt
+written_2/travel_guides/berlitz1/WhatToJapan.txt
+written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt
+written_2/travel_guides/berlitz1/WhatToLasVegas.txt
+written_2/travel_guides/berlitz1/WhatToLosAngeles.txt
+written_2/travel_guides/berlitz1/WhatToMadeira.txt
+written_2/travel_guides/berlitz1/WhatToMalaysia.txt
+written_2/travel_guides/berlitz1/WhatToMallorca.txt
+written_2/travel_guides/berlitz1/WhereToDublin.txt
+written_2/travel_guides/berlitz1/WhereToEdinburgh.txt
+written_2/travel_guides/berlitz1/WhereToEgypt.txt
+written_2/travel_guides/berlitz1/WhereToFWI.txt
+written_2/travel_guides/berlitz1/WhereToFrance.txt
+written_2/travel_guides/berlitz1/WhereToGreek.txt
+written_2/travel_guides/berlitz1/WhereToHawaii.txt
+written_2/travel_guides/berlitz1/WhereToHongKong.txt
+written_2/travel_guides/berlitz1/WhereToIbiza.txt
+written_2/travel_guides/berlitz1/WhereToIndia.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToIstanbul.txt
+written_2/travel_guides/berlitz1/WhereToItaly.txt
+written_2/travel_guides/berlitz1/WhereToJapan.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
+written_2/travel_guides/berlitz1/WhereToLosAngeles.txt
+written_2/travel_guides/berlitz1/WhereToMadeira.txt
+written_2/travel_guides/berlitz1/WhereToMadrid.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz1/WhereToMallorca.txt
+written_2/travel_guides/berlitz2/Algarve-History.txt
+written_2/travel_guides/berlitz2/Algarve-Intro.txt
+written_2/travel_guides/berlitz2/Algarve-WhatToDo.txt
+written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt
+written_2/travel_guides/berlitz2/Amsterdam-History.txt
+written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
+written_2/travel_guides/berlitz2/Amsterdam-WhatToDo.txt
+written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt
+written_2/travel_guides/berlitz2/Athens-History.txt
+written_2/travel_guides/berlitz2/Athens-Intro.txt
+written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
+written_2/travel_guides/berlitz2/Athens-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bahamas-History.txt
+written_2/travel_guides/berlitz2/Bahamas-Intro.txt
+written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bali-History.txt
+written_2/travel_guides/berlitz2/Bali-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bali-WhereToGo.txt
+written_2/travel_guides/berlitz2/Barcelona-History.txt
+written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt
+written_2/travel_guides/berlitz2/Beijing-History.txt
+written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
+written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
+written_2/travel_guides/berlitz2/Berlin-History.txt
+written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt
+written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bermuda-WhatToDo.txt
+written_2/travel_guides/berlitz2/Bermuda-WhereToGo.txt
+written_2/travel_guides/berlitz2/Bermuda-history.txt
+written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
+written_2/travel_guides/berlitz2/Budapest-History.txt
+written_2/travel_guides/berlitz2/Budapest-WhatToDo.txt
+written_2/travel_guides/berlitz2/Budapest-WhereoGo.txt
+written_2/travel_guides/berlitz2/California-History.txt
+written_2/travel_guides/berlitz2/California-WhatToDo.txt
+written_2/travel_guides/berlitz2/California-WhereToGo.txt
+written_2/travel_guides/berlitz2/Canada-History.txt
+written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
+written_2/travel_guides/berlitz2/CanaryIslands-History.txt
+written_2/travel_guides/berlitz2/CanaryIslands-WhatToDo.txt
+written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cancun-History.txt
+written_2/travel_guides/berlitz2/Cancun-WhatToDo.txt
+written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-History.txt
+written_2/travel_guides/berlitz2/China-WhatToDo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Costa-History.txt
+written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
+written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-History.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-History.txt
+written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
+written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
+written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt
+written_2/travel_guides/berlitz2/Cuba-History.txt
+written_2/travel_guides/berlitz2/Cuba-WhatToDo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+written_2/travel_guides/berlitz2/Nepal-History.txt
+written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt
+written_2/travel_guides/berlitz2/Nepal-WhereToGo.txt
+written_2/travel_guides/berlitz2/NewOrleans-History.txt
+written_2/travel_guides/berlitz2/Paris-WhatToDo.txt
+written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
+written_2/travel_guides/berlitz2/Poland-History.txt
+written_2/travel_guides/berlitz2/Poland-WhatToDo.txt
+written_2/travel_guides/berlitz2/Portugal-History.txt
+written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+written_2/travel_guides/berlitz2/PuertoRico-History.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-History.txt
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
-  - **What:** This command searched for how many times the word `pride` appeared in the all the txt files in the directory. 
-  - **Why:** The command is useful since it is able to show which files have the word `pride` and how many times the word appears in the files that do have the word.
+  - **What:** This command searched for all the files in the directory. 
+  - **Why:** The command is useful since it is able to show which files are in a directory.
 
 ----
 
