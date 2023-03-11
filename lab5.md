@@ -296,7 +296,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ./HistoryIsrael.txt
 ```
 
-  - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened the current directory and HistoryIsrael.txt recently, it prints that.
+  - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened the current directory and `HistoryIsrael.txt` recently, it prints that.
   - **Why:** This is useful since it is able to see which files have been accessed recently or until a certain day. It can keep a history on the files.
 
 #### ***Example 2***
@@ -308,7 +308,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ./WhatToDublin.txt
 ```
 
-  - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened the current directory, HistoryIsrael.txt, IntroItaly.txt, and WhatToDublin.txt recently, it prints that.
+  - **What:** This command option finds all files in directories within `./written_2/travel_guides/berlitz1` for files accessed back 0 days. Since I opened the current directory, `HistoryIsrael.txt`, `IntroItaly.txt`, and `WhatToDublin.txt` recently, it prints that.
   - **Why:** This is useful since it is able to see which files have been accessed recently or until a certain day. It can keep a history on the files.
 
 ----
